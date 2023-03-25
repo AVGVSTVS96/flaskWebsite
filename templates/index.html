@@ -36,7 +36,7 @@
           <h2 data-value="I'M CURRENTLY LEARNING" class="mt-4 mb-2 text-2xl font-mono font-bold">I'M CURRENTLY LEARNING</h2>
           <ul class="list-disc list-outside mb-4 pl-4">
             <li class="mb-1.5">Backend web development with Flask and Python</li>
-            <li class="mb-1.5">Front end web design with Astro and TailwindCSS</li>
+            <li class="mb-1.5">Front end web design with Javascript and TailwindCSS</li>
             <li class="mb-1.5">Deploying LLMs like Alpaca and LLaMA on a local system</li>
             <li class="mb-1.5">Building apps that integrate with OpenAI's API</li>
             <li class="mb-1.5">Bulding plugins that integrate with ChatGPT</li>
@@ -76,24 +76,35 @@
       });
       const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+      let intervals = new Map();
+
       document.querySelectorAll("h1, h2").forEach(element => {
         element.onmouseover = event => {
+          if (intervals.has(element)) return;
+
           let iteration = 0;
-          let interval = setInterval(() => {
+
+          const interval = setInterval(() => {
             event.target.innerText = event.target.innerText
               .split("")
               .map((letter, index) => {
                 if (index < iteration) {
                   return event.target.dataset.value[index];
                 }
+
                 return letters[Math.floor(Math.random() * 26)];
               })
               .join("");
+
             if (iteration >= event.target.dataset.value.length) {
               clearInterval(interval);
+              intervals.delete(element);
             }
+
             iteration += 1 / 4;
           }, 30);
+
+          intervals.set(element, interval);
         };
       });
     </script>
