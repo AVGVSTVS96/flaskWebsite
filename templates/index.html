@@ -9,13 +9,14 @@
         with Python, Flask, GPT-4, ChatGPT, TailwindCSS, Cybersecurity, and Fraud Prevention">
     <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
   </head>
- <!--  <div class="bg-mycustom-200 h-full w-full">   only for background in TWplay -->
-  <body class="min-h-screen w-full bg-mycustom-200">
+<!-- <div class="bg-mycustom-200 h-full w-full"> TWplay -->
+<body class="min-h-screen w-full bg-mycustom-200"> 
+ <!--  <div class="bg-inherit"</div> TWplay -->
     <div class="h-1.5 bg-gradient-to-r from-violet-600 via-blue-600 to-fuchsia-600"></div>
     <div class="mx-auto max-w-2xl px-4 py-8 text-left text-white">
       <div class="rounded-lg bg-gradient-to-tr from-violet-600 via-blue-600 to-fuchsia-600 p-1">
         <div class="content rounded-md bg-mycustom-100 p-6">
-          <h1 class="mb-4 text-3xl font-bold">Hi, I'm Bassim!</h1>
+          <h1 data-value="BASSIM SHAHIDY" class="mb-4 text-4xl font-bold font-mono">BASSIM SHAHIDY</h1>
           <p class="mb-4 text-xl">I'm an IT Technician working at the NYC Bar Association</p>
           <hr class="border-t border-gray-600 my-8">
           <h2 class="mt-4 mb-2 text-2xl font-bold">About This Website</h2>
@@ -73,6 +74,34 @@
           counterDisplay.textContent = counter;
         });
       });
+      const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+      let interval = null;
+
+      document.querySelector("h1").onmouseover = event => {  
+        let iteration = 0;
+        
+        clearInterval(interval);
+        
+        interval = setInterval(() => {
+          event.target.innerText = event.target.innerText
+            .split("")
+            .map((letter, index) => {
+              if(index < iteration) {
+                return event.target.dataset.value[index];
+              }
+            
+              return letters[Math.floor(Math.random() * 26)]
+            })
+            .join("");
+          
+          if(iteration >= event.target.dataset.value.length){ 
+            clearInterval(interval);
+          }
+          
+          iteration += 1 / 4;
+        }, 30);
+      }
     </script>
   </body>
 </html>
