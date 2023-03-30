@@ -1,4 +1,4 @@
-run = "npm run build"
+run = "npm run build && python app.py"
 
 # The primary language of the repl. There can be others, though!
 language = "python3"
