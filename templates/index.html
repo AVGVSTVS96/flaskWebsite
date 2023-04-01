@@ -35,26 +35,31 @@
 <body class="min-h-screen w-full bg-mycustom-200"> 
  <!--  <div class="bg-inherit"</div> TWplay -->
     <div class="h-1.5 rotating-gradient-border bg-gradient-to-r from-violet-600 via-blue-600 to-fuchsia-600"></div>
-    <div class="mx-auto max-w-2xl px-4 py-8 text-left text-white">
+    <div class="mx-auto max-w-3xl px-4 py-8 text-left text-white">
       <div class="rounded-lg rotating-gradient-border bg-gradient-to-tr from-violet-600 via-blue-600 to-fuchsia-600 p-1">
         <div class="content rounded-md bg-mycustom-100 p-6">
           <h1 data-value="BASSIM SHAHIDY" class="mb-4 text-4xl font-bold font-mono">BASSIM SHAHIDY</h1>
           <p class="mb-4 text-xl font-semibold">I'm an IT Technician working at the NYC Bar Association</p>
-          <hr class="border-t border-gray-600 my-8">
+      <hr class="border-t border-gray-600 my-8">
           <h2 data-value="ABOUT THIS WEBSITE" class="mt-4 mb-2 text-2xl font-mono font-bold">ABOUT THIS WEBSITE</h2>
-          <p class="mb-4 text-lg">This is the second version of my website. I built the first version with Streamlit which allowed me to build it using only Python. Now That I'm learning CSS I'm writing this website from scratch using Flask as the backend and TailwindCSS for styling.</p>
-        <hr class="border-t border-gray-600 my-8">
+          <p class="mb-4 text-md">This is the second version of my website. I built the first version with Streamlit which allowed me to build it using only Python. Now That I'm learning CSS I'm writing this website from scratch using Flask as the backend and TailwindCSS for styling.</p>
+      <hr class="border-t border-gray-600 my-8">
           <h2 data-value="MY IT SKILLS INCLUDE" class="mt-4 mb-2 text-2xl font-mono font-bold">MY IT SKILLS INCLUDE</h2>
-          <ul class="list-disc list-outside mb-4 pl-4">
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+          <ul class="list-disc list-outside pl-4">
             <li class="mb-1.5">Hardware setup and troubleshooting</li>
             <li class="mb-1.5">Software setup and troubleshooting</li>
             <li class="mb-1.5">Network troubleshooting and setup</li>
             <li class="mb-1.5">Cloud computing and virtualization</li>
             <li class="mb-1.5">Operating systems and security</li>
           </ul>
-          <button id="click-me" class="rounded-lg bg-indigo-600 py-2 px-4 font-mono font-bold text-white hover:bg-gradient-to-r from-violet-600 to-blue-600">Click me!</button>
-          <span id="counter-display" class="ml-2 inline-block rounded-lg border-gray-50 bg-slate-500 px-4 py-2 text-center font-bold hover:bg-gradient-to-r from-violet-600 to-blue-600"> 0 </span>
-                  <hr class="border-t border-gray-600 my-8">
+          </div>
+          <div>
+            <!--add column content here-->
+          </div>
+        </div>  
+      <hr class="border-t border-gray-600 my-8">
           <h2 data-value="I'M CURRENTLY LEARNING" class="mt-4 mb-2 text-2xl font-mono font-bold">I'M CURRENTLY LEARNING</h2>
           <ul class="list-disc list-outside mb-4 pl-4">
             <li class="mb-1.5">Backend web development with Flask and Python</li>
@@ -63,7 +68,8 @@
             <li class="mb-1.5">Building apps that integrate with OpenAI's API</li>
             <li class="mb-1.5">Bulding plugins that integrate with ChatGPT</li>
           </ul>
-      <section class="mt-8 mb-8 border-t border-gray-600">
+      <hr class="border-t border-gray-600 my-8">
+      <section>
         <h2 data-value="CONTACT ME" class="mb-4 text-2xl font-mono font-bold my-8 text-white">CONTACT ME</h2>
         <form action="https://formspree.io/f/mlekwory" method="POST" class="space-y-6">
           <div>
@@ -86,16 +92,6 @@
     </div>
     </body>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const button = document.getElementById('click-me');
-        const counterDisplay = document.getElementById('counter-display');
-        let counter = 0;
-
-        button.addEventListener('click', () => {
-          counter++;
-          counterDisplay.textContent = counter;
-        });
-      });
       const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
       let intervals = new Map();
