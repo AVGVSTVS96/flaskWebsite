@@ -9,24 +9,27 @@
         with Python, Flask, GPT-4, ChatGPT, TailwindCSS, Cybersecurity, and Fraud Prevention">
     <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
     <style>
-      @keyframes rotating-gradient {
-          0% {
-              background-position: 0% 50%;
-          }
-          50% {
-              background-position: 100% 50%;
-          }
-          100% {
-              background-position: 0% 50%;
-          }
+      @keyframes background-pan {
+        from {
+          background-position: 0% center;
+        }
+        to {
+          background-position: -200% center;
+        }
       }
-  
+    
       .rotating-gradient-border {
-          background: linear-gradient(90deg, #7C3AED 0%, #2563EB 50%, #C026D3 100%);
-          background-size: 200% 200%;
-          animation: rotating-gradient 5s infinite;
+        animation: background-pan 5s linear infinite;
+        background: linear-gradient(
+          to right,
+          #7C3AED,
+          #2563EB,
+          #C026D3,
+          #7C3AED
+        );
+        background-size: 200% auto;
       }
-  </style>  
+    </style>         
   </head>
 <!-- <div class="bg-mycustom-200 h-full w-full"> TWplay -->
 <body class="min-h-screen w-full bg-mycustom-200"> 
