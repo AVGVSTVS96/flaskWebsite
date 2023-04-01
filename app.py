@@ -7,5 +7,5 @@ def home():
     return render_template('index.html', title="Tailwind CSS with Flask", description="A simple example of using Tailwind CSS with Flask")
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
-  # app.run(debug=True)
+   # app.run(host='0.0.0.0') # for repl.it
+    app.run(debug=True)

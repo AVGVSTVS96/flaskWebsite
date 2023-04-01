@@ -8,3 +8,5 @@ __pycache__
 # Ignore replit files
 venv
 replit.nix
+pyproject.toml
+poetry.lock
