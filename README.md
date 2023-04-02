@@ -70,3 +70,4 @@ I used the following SVG code:
 
 
 ## Plans
+My next website will be builtl with Astro.
