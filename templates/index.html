@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bassim's Site</title>
-    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.svg') }}">
     <meta name="description" content=" Bassim is an IT Expert with 
         expertise in information technologies, audio visual technologies, 
         and computer science. Bassim also has a vast set of academic 
@@ -51,11 +51,11 @@
           <h2 data-value="ABOUT THIS WEBSITE" class="mt-4 mb-2 text-2xl font-mono font-bold">ABOUT THIS WEBSITE</h2>
           <p class="mb-4 text-md">This is the second version of my website. I built the first version with Streamlit which allowed me to build it using only Python. I've since started learning HTML, CSS, and Javascript and am writing this website from scratch using Flask as the backend and TailwindCSS for styling.</p>
       <hr class="border-t border-gray-600 my-8">
-      <div class="grid grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!--first column-->
           <div>  
             <h2 data-value="MY IT SKILLS INCLUDE" class="mb-2 text-2xl font-mono font-bold">MY IT SKILLS INCLUDE</h2>
-            <ul class="list-disc list-outside pl-4">
+            <ul class="list-disc list-outside mb-1 md:mb-4 pl-4">
               <li class="mb-1">Hardware setup, maintenance, and troubleshooting</li>
               <li class="mb-1">Software installation, configuration, and troubleshooting</li>
               <li class="mb-1">Network diagnostics, troubleshooting, and setup</li>
@@ -66,7 +66,7 @@
             </ul>
           </div>
           <!--second column-->
-          <div class="flex items-center justify-center">
+          <div class="flex items-center justify-center mb-1 md:mb-0">
             <div class="svg-container hover:scale-110 transition-transform duration-300">
               <svg width="225" height="225" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> 
                 <g clip-path="url(#clip0_105_351)"> <path d="M156.064 143.936L112.127 100L156.064 56.0636L200 100L156.064 143.936ZM43.9364 143.936L0 100L43.9364 56.0636L87.8728 100L43.9364 143.936ZM100 200L56.0636 156.064L100 112.127L143.936 156.064L100 200ZM100 87.8728L56.0636 43.9364L100 0L143.936 43.9364L100 87.8728Z" fill="url(#paint0_linear_105_351)"/> </g> <defs> <linearGradient id="paint0_linear_105_351" x1="20.5" y1="16" x2="100" y2="200" gradientUnits="userSpaceOnUse"> <stop stop-color="#ACAAFF"/> <stop offset="1" stop-color="#C0E8FF"/> </linearGradient> <clipPath id="clip0_105_351"> <rect width="200" height="200" fill="white"/> </clipPath> </defs> 
@@ -75,11 +75,11 @@
           </div>
         </div>  
       <hr class="border-t border-gray-600 my-8">
-      <div class="grid grid-cols-2 gap-8">  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">  
         <!--first column-->
           <div>
             <h2 data-value="I'M CURRENTLY LEARNING" class="mb-2 text-2xl font-mono font-bold">I'M CURRENTLY LEARNING</h2>
-            <ul class="list-disc list-outside mb-4 pl-4">
+            <ul class="list-disc list-outside mb-1 md:mb-4 pl-4">
               <li class="mb-1">Backend web development with Flask and Python</li>
               <li class="mb-1">Front end web development with JS, HTML, and CSS</li>
               <li class="mb-1">Local deployment of LLMs like Alpaca and LLaMA</li>
@@ -89,7 +89,7 @@
             </ul>
           </div>
           <!--second column-->
-          <div class="flex items-center justify-center">
+          <div class="flex items-center justify-center mb-1 md:mb-0">
             <div class="svg-container hover:scale-110 transition-transform duration-300">
              <svg width="185" height="185" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_105_288)">
@@ -109,11 +109,11 @@
           </div>
         </div>
         <hr class="border-t border-gray-600 my-8">
-          <div class="grid grid-cols-2 gap-8">  
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">  
             <!--first column-->
             <div>
               <h2 data-value="MY ACADEMIC INTERESTS" class="mb-2 text-2xl font-mono font-bold">MY ACADEMIC INTERESTS</h2>
-              <ul class="list-disc list-outside mb-4 pl-4">
+              <ul class="list-disc list-outside mb-1 md:mb-4 pl-4">
                 <li class="mb-1">History - Ancient Greece, Rome, and the Renaissance</li>
                 <li class="mb-1">Philosophy - Objectivism and Existentialism</li>
                 <li class="mb-1">Pyschology - Social Pyschology and Political Cognition</li>
@@ -123,7 +123,7 @@
               </ul>
             </div>
             <!--second column-->
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center mb-1 md:mb-0">
               <div class="svg-container hover:scale-110 transition-transform duration-300">
                 <svg width="210" height="210" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_105_284)">
@@ -144,7 +144,7 @@
           </div>  
         <hr class="border-t border-gray-600 my-8">
           <section>
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h2 data-value="CONTACT ME" class="mb-4 text-2xl font-mono font-bold text-white">CONTACT ME</h2>
                 <form action="https://formspree.io/f/mlekwory" method="POST" class="space-y-6">
@@ -159,7 +159,7 @@
                   <button type="submit" class="py-2 px-5 font-bold text-center text-white rounded-lg bg-indigo-600 hover:bg-gradient-to-r from-violet-600 to-blue-600 focus:ring-4 focus:outline-none focus:ring-primary-300">Submit</button>
                 </form>
               </div>
-              <div class="flex items-center justify-center">
+              <div class="flex items-center justify-center mt-2 md:mt-0">
                 <div class="svg-container hover:scale-110 transition-transform duration-300">
                   <svg width="210" height="210" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_231_793)">
