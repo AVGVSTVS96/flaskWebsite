@@ -2,7 +2,6 @@
 node_modules/
 
 # Ignore build output file
-static/output.css
 __pycache__
 
 # Ignore replit files
