@@ -1,7 +1,7 @@
-# **flaskWebsite**
+# 🌎 **flaskWebsite**
 This is my second website, built using Flask and Tailwind CSS. My first website was built with Streamlit, but I'm starting to learn more about HTML and CSS so I'm building a new website from scratch.
 
-**GPT-4 Wrote a description of my website:**
+## 🖥️ **GPT-4 Wrote a description of my website:** 
 
 This website is a personal resume site for Bassim. The site is built using HTML, CSS, and JavaScript, along with the Flask framework for the backend and the TailwindCSS utility-first CSS framework for styling. The code is organized into a standard HTML5 document structure, including a doctype declaration, a head section with metadata, and a body section containing the site's content.
 
@@ -17,12 +17,12 @@ Lastly, there is a JavaScript script at the bottom of the body section, which ad
 
 Overall, this website is a clean, modern, and interactive personal resume site that showcases Bassim's skills and expertise in a visually appealing and engaging manner.
 
-# **Components**
-## **Form**
+# 🛠️  **Components**
+## 📝 **Form**
 This website features text components in addition to a Formspree form. The form works flawlessly, sending me an email each time it's submitted. 
 
 ---
-## **Gradients**
+## 🎨 **Gradients**
 I created an aminated gradient border around my text box and at the top of my page using the following tailwind code:
 ```css
 from-violet-600 via-blue-600 to-fuchsia-600
