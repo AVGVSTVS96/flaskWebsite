@@ -9,3 +9,6 @@ venv
 replit.nix
 pyproject.toml
 poetry.lock
+
+# Ignore .env file
+myenv
