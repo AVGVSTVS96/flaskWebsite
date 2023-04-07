@@ -40,27 +40,45 @@
         min-height: 100px;
         max-height: 176px;
       }
-
+        
+    .radial_background {
+      background:
+        radial-gradient(
+          rgba(35, 39, 60, 1.0) 8%,
+          transparent 8%
+        ),
+        #191d2d;
+      background-position: center; /* Set the background-position to center */
+      background-size: 40px 60px;
+      height: 100%;
+      width: 100%;
+      transition: background-size 0.5s, background-position 0.5s;
+    }
+    
+    .radial_background.zoomed {
+      background-size: 41px 61px;
+      background-position: calc(50% - 0.5px) calc(50% - 0.5px); /* Adjust the background-position during the zoom */
+      transition: background-size 0.5s, background-position 0.5s;
+    }
+    
     </style>         
   </head>
-<!-- <div class="bg-mycustom-200 h-full w-full"> TWplay -->
-<body class="min-h-screen w-full bg-mycustom-200"> 
- <!--  <div class="bg-inherit"</div> TWplay -->
-    <div class="h-1.5 rotating-gradient-border bg-gradient-to-r from-violet-600 via-blue-600 to-fuchsia-600"></div>
-    <div class="mx-auto max-w-5xl px-4 py-8 text-left text-white">
-      <div class="rounded-lg rotating-gradient-border bg-gradient-to-tr from-violet-600 via-blue-600 to-fuchsia-600 p-1">
-        <div class="content rounded-md bg-mycustom-100 p-12">
-          <h1 data-value="BASSIM SHAHIDY" class="mb-4 text-4xl font-bold font-mono">BASSIM SHAHIDY</h1>
+<body class="radial_background min-h-screen w-full"> 
+    <div class="h-1.5 rotating-gradient-border"></div>
+    <div class="mx-auto max-w-5xl px-4 py-8 text-left text-white font-mono">
+      <div class="rounded-lg rotating-gradient-border p-1">
+        <div id="content" class="content rounded-md bg-mycustom-100 p-12">
+          <h1 data-value="BASSIM SHAHIDY" class="mb-4 text-4xl font-bold">BASSIM SHAHIDY</h1>
           <p class="mb-4 text-xl font-semibold">I'm an IT Technician at the NYC Bar Association</p>
       <hr class="border-t border-gray-600 my-8">
-          <h2 data-value="ABOUT THIS WEBSITE" class="mt-4 mb-2 text-2xl font-mono font-bold">ABOUT THIS WEBSITE</h2>
+          <h2 data-value="ABOUT THIS WEBSITE" class="mt-4 mb-2 text-2xl font-bold">ABOUT THIS WEBSITE</h2>
           <p class="mb-4 text-md">This is the second version of my website. I built the first version with Streamlit which allowed me to build it using only Python. I've since started learning HTML, CSS, and Javascript and am writing this website from scratch using Flask as the backend and TailwindCSS for styling.</p>
       <hr class="border-t border-gray-600 my-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!--first column-->
           <div>  
-            <h2 data-value="MY IT SKILLS INCLUDE" class="mb-2 text-2xl font-mono font-bold">MY IT SKILLS INCLUDE</h2>
-            <ul class="list-disc list-outside mb-1 md:mb-4 pl-4">
+            <h2 data-value="MY IT SKILLS INCLUDE" class="mb-2 text-2xl font-bold">MY IT SKILLS INCLUDE</h2>
+            <ul class="list-disc text-sm list-outside mb-1 md:mb-4 pl-4">
               <li class="mb-1">Hardware setup, maintenance, and troubleshooting</li>
               <li class="mb-1">Software installation, configuration, and troubleshooting</li>
               <li class="mb-1">Network diagnostics, troubleshooting, and setup</li>
@@ -83,8 +101,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">  
         <!--first column-->
           <div>
-            <h2 data-value="I'M CURRENTLY LEARNING" class="mb-2 text-2xl font-mono font-bold">I'M CURRENTLY LEARNING</h2>
-            <ul class="list-disc list-outside mb-1 md:mb-4 pl-4">
+            <h2 data-value="I'M CURRENTLY LEARNING" class="mb-2 text-2xl font-bold">I'M CURRENTLY LEARNING</h2>
+            <ul class="list-disc list-outside text-sm mb-1 md:mb-4 pl-4">
               <li class="mb-1">Backend web development with Flask and Python</li>
               <li class="mb-1">Front end web development with JS, HTML, and CSS</li>
               <li class="mb-1">Local deployment of LLMs like Alpaca and LLaMA</li>
@@ -117,14 +135,14 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">  
             <!--first column-->
             <div>
-              <h2 data-value="MY ACADEMIC INTERESTS" class="mb-2 text-2xl font-mono font-bold">MY ACADEMIC INTERESTS</h2>
-              <ul class="list-disc list-outside mb-1 md:mb-4 pl-4">
+              <h2 data-value="MY ACADEMIC INTERESTS" class="mb-2 text-2xl font-bold">MY ACADEMIC INTERESTS</h2>
+              <ul class="list-disc list-outside text-sm mb-1 md:mb-4 pl-4">
                 <li class="mb-1">History - Ancient Greece, Rome, and the Renaissance</li>
                 <li class="mb-1">Philosophy - Objectivism and Existentialism</li>
                 <li class="mb-1">Pyschology - Social Pyschology and Political Cognition</li>
                 <li class="mb-1">Sociology - Structural Functionalism and Political Sociology</li>
-                <li class="mb-1">Linguistics - How languages shape our minds and society</li>
-                <li class="mb-1">Political Science - Government structure and separation of power</li>
+                <li class="mb-1">Linguistics - Linguistic Relativity and Determinism</li>
+                <li class="mb-1">Political Science - Institutionalism and Constitutional Design</li>
               </ul>
             </div>
             <!--second column-->
@@ -151,7 +169,7 @@
           <section>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h2 data-value="CONTACT ME" class="mb-4 text-2xl font-mono font-bold text-white">CONTACT ME</h2>
+                <h2 data-value="CONTACT ME" class="mb-4 text-2xl font-bold text-white">CONTACT ME</h2>
                 <form action="https://formspree.io/f/mlekwory" method="POST" class="space-y-6">
                   <div>
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Your email</label>
@@ -186,7 +204,7 @@
           </section>      
         </div>
       </div>
-    </div>
+    </div>      
     </body>
     <script>
       const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -232,6 +250,20 @@
           animateText(element); // Animate headings on hover
         };
       });
+        // new code
+        const content = document.getElementById('content');
+        const radialBackground = document.querySelector('.radial_background');
+        
+        content.addEventListener('mouseover', () => {
+          radialBackground.classList.add('zoomed');
+        });
+        
+        content.addEventListener('mouseout', () => {
+          radialBackground.classList.remove('zoomed');
+          setTimeout(() => { 
+            radialBackground.style.transform = 'scale(1)';
+          }, 500); // Reset transform after 500ms
+        });
     </script>
   </body>
 </html>
