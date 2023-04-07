@@ -1,8 +1,7 @@
 {
   "name": "flask",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Flask and Tailwind Website",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tailwindcss -i static/styles.css -o static/output.css"

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "flaskwebsite"
+version = "1.0.0"
+description = "Website built with Flask and TailwindCSS"
+authors = ["AVGVSTVS96 <122117267+AVGVSTVS96@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "8.1.3"
+flask = "2.2.3"
+gunicorn = "20.1.0"
+itsdangerous = "2.1.2"
+jinja2 = "3.1.2"
+markupsafe = "2.1.2"
+werkzeug = "2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
