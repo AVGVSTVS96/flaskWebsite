@@ -1,22 +1,6 @@
 # 🌎 **flaskWebsite**
 This is my second website, built using Flask and Tailwind CSS. My first website was built with Streamlit, but I'm starting to learn more about HTML and CSS so I'm building a new website from scratch.
 
-## 🖥️ **GPT-4 Wrote a description of my website:** 
-
-This website is a personal resume site for Bassim. The site is built using HTML, CSS, and JavaScript, along with the Flask framework for the backend and the TailwindCSS utility-first CSS framework for styling. The code is organized into a standard HTML5 document structure, including a doctype declaration, a head section with metadata, and a body section containing the site's content.
-
-The head section contains metadata like the site's title and description, which are important for search engine optimization (SEO). It also includes a link to an external CSS file, "output.css", which is generated from TailwindCSS. Additionally, there is an embedded style block that contains custom CSS, such as the keyframes animation for the "background-pan" and the "rotating-gradient-border" class. This custom CSS is used to create a visually appealing gradient border effect throughout the site.
-
-The body section is structured using a combination of divs, headings, paragraphs, lists, and SVGs. It begins with a gradient border at the top of the page, followed by a container that holds the main content. The main content consists of various sections, each with headings and paragraphs that describe Bassim's expertise, skills, and learning objectives. These sections are organized using the CSS Grid layout, which makes the content responsive and easy to read on various screen sizes.
-
-The website also features interactive SVG icons, representing Bassim's IT skills and learning objectives. These icons are created using SVG paths and are styled with a linear gradient to give them a modern and engaging appearance.
-
-Towards the end of the body section, there is a contact form that allows users to send messages directly to Bassim. This form uses the Formspree service to handle form submissions, ensuring that messages are sent to Bassim's email without the need for any server-side code.
-
-Lastly, there is a JavaScript script at the bottom of the body section, which adds a fun interaction to the headings. When a user hovers over a heading, the letters in the heading are temporarily replaced with random letters, giving the impression of a scramble effect. This interaction is achieved by using event listeners, intervals, and string manipulation.
-
-Overall, this website is a clean, modern, and interactive personal resume site that showcases Bassim's skills and expertise in a visually appealing and engaging manner.
-
 # 🛠️  **Components**
 ## 📝 **Form**
 This website features text components in addition to a Formspree form. The form works flawlessly, sending me an email each time it's submitted. 
